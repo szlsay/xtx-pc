@@ -1,6 +1,9 @@
 export default {
-  namespaced: false,
-  state: {
+  namespaced: true,
+  state () {
+    return {
+      list: []
+    }
   },
   mutations: {
   },
