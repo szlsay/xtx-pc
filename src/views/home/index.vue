@@ -15,7 +15,7 @@
   <!-- 品牌组件 -->
   <HomeBrand />
   <!-- 产品区块 -->
-  <!-- <HomeProduct /> -->
+  <HomeProduct />
   <!-- 最新专题 -->
   <!-- <HomeSpecial /> -->
 </template>
@@ -25,7 +25,7 @@ import HomeBanner from './components/home-banner'
 import HomeNew from './components/home-new'
 import HomeHot from './components/home-hot'
 import HomeBrand from './components/home-brand'
-// import HomeProduct from './components/home-product'
+import HomeProduct from './components/home-product'
 // import HomeSpecial from './components/home-special'
 export default {
   name: 'HomePage',
@@ -34,8 +34,8 @@ export default {
     HomeBanner,
     HomeNew,
     HomeHot,
-    HomeBrand
-    // HomeProduct,
+    HomeBrand,
+    HomeProduct
     // HomeSpecial
   }
 }
