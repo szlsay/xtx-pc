@@ -1,5 +1,5 @@
 <template>
-<nav>nav</nav>
+<app-navbar></app-navbar>
 <header>header</header>
 <div class="main">
 <!-- <div class="box2">ddd</div> -->
@@ -9,8 +9,12 @@
 </template>
 
 <script>
+import AppNavbar from '@/components/app-navbar.vue'
 export default {
-  name: 'LayoutPage'
+  name: 'LayoutPage',
+  components: {
+    AppNavbar
+  }
 }
 </script>
 
