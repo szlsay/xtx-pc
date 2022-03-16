@@ -2,6 +2,7 @@
 <nav>nav</nav>
 <header>header</header>
 <div class="main">
+  <!-- <div class="box2"></div> -->
 <router-view>main</router-view>
 </div>
 <footer>footer</footer>
@@ -13,6 +14,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="less" scoped>
+// @import url('~@/assets/styles/mixins.less');
+// .box2{
+//   .hoverShadow()
+// }
 </style>
