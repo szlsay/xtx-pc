@@ -1,27 +1,35 @@
 <template>
-<app-navbar></app-navbar>
-<header>header</header>
-<div class="main">
-<!-- <div class="box2">ddd</div> -->
-<router-view>main</router-view>
+<!-- 顶部通栏 -->
+<AppNavbar />
+<!-- 头部组件 -->
+<AppHeader />
+<!-- 吸顶头部 -->
+<AppHeaderSticky />
+<!-- 内容容器 -->
+<div class="app-body">
+  <!-- 二级路由 -->
+  <RouterView />
 </div>
-<footer>footer</footer>
+<!-- 底部组件 -->
+<AppFooter />
 </template>
 
 <script>
 import AppNavbar from '@/components/app-navbar.vue'
+import AppHeader from '@/components/app-header.vue'
+import AppFooter from '@/components/app-footer.vue'
 export default {
   name: 'LayoutPage',
   components: {
-    AppNavbar
+    AppNavbar,
+    AppHeader,
+    AppFooter
   }
 }
 </script>
 
 <style lang="less" scoped>
-// @import url('~@/assets/styles/mixins.less');
-// .box2{
-//   .hoverShadow();
-//   color: @xtxColor;
-// }
+.app-body{
+  min-height: 600px;
+}
 </style>
