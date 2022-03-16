@@ -11,7 +11,7 @@
   <!-- 新鲜好物 -->
   <HomeNew />
   <!-- 人气推荐 -->
-  <!-- <HomeHot /> -->
+  <HomeHot />
   <!-- 品牌组件 -->
   <!-- <HomeBrand /> -->
   <!-- 产品区块 -->
@@ -23,7 +23,7 @@
 import HomeCategory from './components/home-category'
 import HomeBanner from './components/home-banner'
 import HomeNew from './components/home-new'
-// import HomeHot from './components/home-hot'
+import HomeHot from './components/home-hot'
 // import HomeBrand from './components/home-brand'
 // import HomeProduct from './components/home-product'
 // import HomeSpecial from './components/home-special'
@@ -32,8 +32,8 @@ export default {
   components: {
     HomeCategory,
     HomeBanner,
-    HomeNew
-    // HomeHot,
+    HomeNew,
+    HomeHot
     // HomeBrand,
     // HomeProduct,
     // HomeSpecial
