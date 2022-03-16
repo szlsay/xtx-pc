@@ -13,8 +13,8 @@
         </template>
         <!-- 骨架 -->
         <template v-else>
-          <!-- <XtxSkeleton height="18px" width="60px" bg="rgba(255,255,255,0.2)" style="margin-right:5px" /> -->
-          <!-- <XtxSkeleton height="18px" width="50px" bg="rgba(255,255,255,0.2)"/> -->
+          <XtxSkeleton height="18px" width="60px" bg="rgba(255,255,255,0.2)" style="margin-right:5px" />
+          <XtxSkeleton height="18px" width="50px" bg="rgba(255,255,255,0.2)"/>
         </template>
       </li>
     </ul>
