@@ -5,7 +5,7 @@
       <!-- 左侧分类 -->
       <HomeCategory />
       <!-- 轮播图 -->
-      <!-- <HomeBanner /> -->
+      <HomeBanner />
     </div>
   </div>
   <!-- 新鲜好物 -->
@@ -21,7 +21,7 @@
 </template>
 <script>
 import HomeCategory from './components/home-category'
-// import HomeBanner from './components/home-banner'
+import HomeBanner from './components/home-banner'
 // import HomeNew from './components/home-new'
 // import HomeHot from './components/home-hot'
 // import HomeBrand from './components/home-brand'
@@ -30,8 +30,8 @@ import HomeCategory from './components/home-category'
 export default {
   name: 'HomePage',
   components: {
-    HomeCategory
-    // HomeBanner,
+    HomeCategory,
+    HomeBanner
     // HomeNew,
     // HomeHot,
     // HomeBrand,
