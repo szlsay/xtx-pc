@@ -2,7 +2,7 @@
 <nav>nav</nav>
 <header>header</header>
 <div class="main">
-  <!-- <div class="box2"></div> -->
+<!-- <div class="box2">ddd</div> -->
 <router-view>main</router-view>
 </div>
 <footer>footer</footer>
@@ -17,6 +17,7 @@ export default {
 <style lang="less" scoped>
 // @import url('~@/assets/styles/mixins.less');
 // .box2{
-//   .hoverShadow()
+//   .hoverShadow();
+//   color: @xtxColor;
 // }
 </style>
