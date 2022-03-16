@@ -1,12 +1,12 @@
 <template>
 <div class="container">
-  CategoryPage
+  SubCategory
 </div>
 </template>
 
 <script>
 export default {
-  name: 'CategoryPage'
+  name: 'SubCategory'
 }
 </script>
 
