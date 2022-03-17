@@ -17,7 +17,7 @@
         <div class="spec">
           <GoodsName :goods="goods" />
           <!-- sku组件 skuId="1369155865461919746" 测试选中 -->
-          <!-- <GoodsSku :goods="goods" @change="changeSku" /> -->
+          <GoodsSku :goods="goods" @change="changeSku" />
           <!-- 数量选择组件 -->
           <XtxNumbox label="数量" v-model="num" :max="goods.inventory" />
           <!-- 按钮组件 -->
@@ -49,7 +49,7 @@
 import GoodsImage from './components/goods-image'
 import GoodsSales from './components/goods-sales'
 import GoodsName from './components/goods-name'
-// import GoodsSku from './components/goods-sku'
+import GoodsSku from './components/goods-sku'
 // import GoodsTabs from './components/goods-tabs'
 // import GoodsHot from './components/goods-hot'
 // import GoodsWarn from './components/goods-warn'
@@ -60,7 +60,7 @@ import { useStore } from 'vuex'
 import Message from '@/components/library/Message'
 export default {
   name: 'XtxGoodsPage',
-  components: { GoodsImage, GoodsSales, GoodsName },
+  components: { GoodsImage, GoodsSales, GoodsName, GoodsSku },
   // components: { GoodsRelevant, GoodsImage, GoodsSales, GoodsName, GoodsSku, GoodsTabs, GoodsHot, GoodsWarn },
   setup () {
     const goods = useGoods()
