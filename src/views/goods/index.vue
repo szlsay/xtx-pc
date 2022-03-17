@@ -25,19 +25,19 @@
         </div>
       </div>
       <!-- 商品推荐 -->
-      <!-- <GoodsRelevant :goodsId="goods.id" /> -->
+      <GoodsRelevant :goodsId="goods.id" />
       <!-- 商品详情 -->
       <div class="goods-footer">
         <div class="goods-article">
           <!-- 商品+评价 -->
-          <!-- <GoodsTabs /> -->
+          <GoodsTabs />
           <!-- 注意事项 -->
-          <!-- <GoodsWarn /> -->
+          <GoodsWarn />
         </div>
         <!-- 24热榜+周热销榜 -->
         <div class="goods-aside">
-          <!-- <GoodsHot /> -->
-          <!-- <GoodsHot :type="2" /> -->
+          <GoodsHot />
+          <GoodsHot :type="2" />
         </div>
       </div>
     </div>
@@ -45,14 +45,14 @@
 </template>
 
 <script>
-// import GoodsRelevant from './components/goods-relevant'
+import GoodsRelevant from './components/goods-relevant'
 import GoodsImage from './components/goods-image'
 import GoodsSales from './components/goods-sales'
 import GoodsName from './components/goods-name'
 import GoodsSku from './components/goods-sku'
-// import GoodsTabs from './components/goods-tabs'
-// import GoodsHot from './components/goods-hot'
-// import GoodsWarn from './components/goods-warn'
+import GoodsTabs from './components/goods-tabs'
+import GoodsHot from './components/goods-hot'
+import GoodsWarn from './components/goods-warn'
 import { nextTick, provide, ref, watch } from 'vue'
 import { findGoods } from '@/api/product'
 import { useRoute } from 'vue-router'
@@ -60,8 +60,7 @@ import { useStore } from 'vuex'
 import Message from '@/components/library/Message'
 export default {
   name: 'XtxGoodsPage',
-  components: { GoodsImage, GoodsSales, GoodsName, GoodsSku },
-  // components: { GoodsRelevant, GoodsImage, GoodsSales, GoodsName, GoodsSku, GoodsTabs, GoodsHot, GoodsWarn },
+  components: { GoodsRelevant, GoodsImage, GoodsSales, GoodsName, GoodsSku, GoodsTabs, GoodsHot, GoodsWarn },
   setup () {
     const goods = useGoods()
     const changeSku = (sku) => {
