@@ -4,35 +4,32 @@
       <!-- 面包屑 -->
       <SubBread />
       <!-- 筛选区 -->
-      <!-- <SubFilter @filter-change="filterChange" /> -->
+      <SubFilter @filter-change="filterChange" />
       <!-- 商品面板（排序+列表） -->
       <div class="goods-list">
-        <!-- <SubSort @sort-change="sortChange" />
+        <SubSort @sort-change="sortChange" />
         <ul>
           <li v-for="goods in goodsList" :key="goods.id" >
             <GoodsItem :goods="goods" />
           </li>
-        </ul> -->
+        </ul>
         <!-- 无限加载组件 -->
-        <!-- <XtxInfiniteLoading :loading="loading" :finished="finished" @infinite="getData" /> -->
+        <XtxInfiniteLoading :loading="loading" :finished="finished" @infinite="getData" />
       </div>
     </div>
   </div>
 </template>
 <script>
 import SubBread from './components/sub-bread'
-// import SubFilter from './components/sub-filter'
-// import SubSort from './components/sub-sort'
-// import GoodsItem from './components/goods-item'
+import SubFilter from './components/sub-filter'
+import SubSort from './components/sub-sort'
+import GoodsItem from './components/goods-item'
 import { ref, watch } from 'vue'
 import { findSubCategoryGoods } from '@/api/category'
 import { useRoute } from 'vue-router'
 export default {
   name: 'SubCategory',
-  components: {
-    SubBread
-  // SubFilter, SubSort, GoodsItem
-  },
+  components: { SubBread, SubFilter, SubSort, GoodsItem },
   setup () {
     const route = useRoute()
     // 加载中
