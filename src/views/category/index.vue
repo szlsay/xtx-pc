@@ -9,9 +9,9 @@
         </Transition>
       </XtxBread>
       <!-- 轮播图 -->
-      <!-- <XtxCarousel :sliders="sliders" style="height:500px" /> -->
+      <XtxCarousel :sliders="sliders" style="height:500px" />
       <!-- 所有二级分类 -->
-      <!-- <div class="sub-list">
+      <div class="sub-list">
         <h3>全部分类</h3>
         <ul>
           <li v-for="sub in topCategory.children" :key="sub.id">
@@ -21,9 +21,9 @@
             </a>
           </li>
         </ul>
-      </div> -->
+      </div>
       <!-- 各个分类推荐商品 -->
-      <!-- <div class="ref-goods" v-for="sub in subList" :key="sub.id">
+      <div class="ref-goods" v-for="sub in subList" :key="sub.id">
         <div class="head">
           <h3>- {{sub.name}} -</h3>
           <p class="tag">温暖柔软，品质之选</p>
@@ -32,7 +32,7 @@
         <div class="body">
           <GoodsItem v-for="goods in sub.goods" :key="goods.id" :goods="goods" />
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
 </template>
@@ -41,11 +41,11 @@ import { computed, ref, watch } from 'vue'
 import { findBanner } from '@/api/home'
 import { useStore } from 'vuex'
 import { useRoute } from 'vue-router'
-// import GoodsItem from './components/goods-item'
+import GoodsItem from './components/goods-item'
 import { findTopCategory } from '@/api/category'
 export default {
   name: 'TopCategory',
-  // components: { GoodsItem },
+  components: { GoodsItem },
   setup () {
     // 轮播图
     const sliders = ref([])
