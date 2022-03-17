@@ -9,17 +9,17 @@
         <input type="text" placeholder="搜一搜" />
       </div>
       <!-- 使用头部购物车组件 -->
-      <!-- <AppHeaderCart /> -->
+      <AppHeaderCart />
     </div>
   </header>
 </template>
 
 <script>
 import AppHeaderNav from './app-header-nav'
-// import AppHeaderCart from './app-header-cart'
+import AppHeaderCart from './app-header-cart'
 export default {
   name: 'AppHeader',
-  components: { AppHeaderNav }
+  components: { AppHeaderNav, AppHeaderCart }
 }
 </script>
 
@@ -37,7 +37,7 @@ export default {
       height: 132px;
       width: 100%;
       text-indent: -9999px;
-      background: url(~@/assets/images/logo.png) no-repeat center 18px / contain;
+      background: url(../assets/images/logo.png) no-repeat center 18px / contain;
     }
   }
   .search {
