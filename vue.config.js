@@ -20,6 +20,9 @@ module.exports = {
       .loader('url-loader')
       .tap(options => Object.assign(options, { limit: 10000 }))
   },
+  devServer: {
+    disableHostCheck: true
+  },
   configureWebpack: {
     externals: {
       qc: 'QC'
