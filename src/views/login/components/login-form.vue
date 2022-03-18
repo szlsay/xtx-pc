@@ -189,7 +189,6 @@ export default {
     const { pause, resume } = useIntervalFn(() => {
       time.value--
       if (time.value <= 0) {
-        time.value = 0
         pause()
       }
     }, 1000, false)

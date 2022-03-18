@@ -16,7 +16,7 @@
         <i class="icon iconfont icon-code"></i>
         <Field :class="{err:errors.code}" v-model="form.code" name="code" class="input" type="text" placeholder="短信验证码" />
         <span @click="send()" class="code">
-          {{time === 0 ? '发送验证码':`${time}秒后发送`}}
+          {{time===0?'发送验证码':`${time}秒后发送`}}
         </span>
       </div>
       <div v-if="errors.code" class="error">{{errors.code}}</div>

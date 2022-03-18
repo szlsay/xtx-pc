@@ -13,15 +13,14 @@
 <!-- 底部组件 -->
 <AppFooter />
 </template>
-
 <script>
-import AppNavbar from '@/components/app-navbar.vue'
-import AppHeader from '@/components/app-header.vue'
-import AppFooter from '@/components/app-footer.vue'
+import AppNavbar from '@/components/app-navbar'
+import AppHeader from '@/components/app-header'
+import AppFooter from '@/components/app-footer'
 import AppHeaderSticky from '@/components/app-header-sticky'
 import { useStore } from 'vuex'
 export default {
-  name: 'LayoutPage',
+  name: 'Layout',
   components: {
     AppNavbar,
     AppHeader,
@@ -35,9 +34,8 @@ export default {
   }
 }
 </script>
-
-<style lang="less" scoped>
-.app-body{
+<style scoped lang="less">
+.app-body {
   min-height: 600px;
 }
 </style>

@@ -1,3 +1,4 @@
 <template>
-  <router-view></router-view>
+  <!-- 一级路由 -->
+  <RouterView />
 </template>
